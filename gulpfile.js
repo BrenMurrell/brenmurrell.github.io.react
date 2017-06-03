@@ -41,9 +41,9 @@ require('es6-promise').polyfill();                      // Adds es6 promises sup
 
 // Set up a directories object for easy reference
 var dirs = {
-    css: 'css',
+    css: 'public/css',
     scss: 'src/sass/**', // Includes all sub directories
-    images: 'images'
+    images: 'public/images'
 };
 
 // Sass Output Settings
@@ -61,7 +61,7 @@ var apConfig = {
 // BrowserSync Config
 var bsConfig = {
     enabled: true,
-    proxy: "dev.brenmurrell"
+    proxy: "localhost"
 };
 
 
@@ -119,7 +119,7 @@ gulp.task('serve', ['watch'], function () {
         browserSync.init({
             proxy: bsConfig.proxy
         });
-        gulp.watch("/build/*.html").on('change', browserSync.reload);   // Reload the page when a view file changes
+        gulp.watch("**/*.jsx").on('change', browserSync.reload);   // Reload the page when a view file changes
         browserSync.stream();
     }
 
