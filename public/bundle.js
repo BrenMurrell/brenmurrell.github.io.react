@@ -11033,11 +11033,6 @@ const Home = props => {
         null,
         "Front End Developer"
       )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      { className: "nav nav--next" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-arrow-circle-o-down" })
     )
   );
 };

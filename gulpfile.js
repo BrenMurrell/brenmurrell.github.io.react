@@ -61,7 +61,7 @@ var apConfig = {
 // BrowserSync Config
 var bsConfig = {
     enabled: true,
-    proxy: "localhost"
+    proxy: "localhost:3030"
 };
 
 

@@ -22,3 +22,18 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+function scrollTarget(target, speed) {
+    //alert($('body').hasClass('fixed'));
+    var subnavAdjustment = 0;
+
+    if (speed === undefined) {
+        speed = 400;
+    }
+
+    var targetTop = ($(target).offset().top) - $('header').height();
+
+    $("html, body").animate({
+        scrollTop: targetTop
+    }, speed);
+}

@@ -9,9 +9,6 @@ const Home = (props) => {
         <h1>Bren Murrell</h1>
         <h2>Front End Developer</h2>
       </div>
-      <div className="nav nav--next">
-        <i className="fa fa-arrow-circle-o-down"></i>
-      </div>
     </section>
   )
 }
