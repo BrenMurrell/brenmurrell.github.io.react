@@ -10991,12 +10991,12 @@ const App = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_2__Home__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_3__Intro__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_4__Competency__["a" /* default */] })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_3__Intro__["a" /* default */] })
   )
 );
 
 /* harmony default export */ __webpack_exports__["a"] = (App);
+// <Route exact path='/' component={Competency} />
 
 /***/ }),
 /* 95 */
@@ -25549,7 +25549,7 @@ function renderMembers(membersArray) {
    });
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (Members);
+/* unused harmony default export */ var _unused_webpack_default_export = (Members);
 
 function renderMember(member) {
    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

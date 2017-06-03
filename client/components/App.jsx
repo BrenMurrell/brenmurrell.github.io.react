@@ -10,10 +10,10 @@ const App = () => (
     <div>
       <Route exact path='/' component={Home} />
       <Route exact path='/' component={Intro} />
-      <Route exact path='/' component={Competency} />
 
     </div>
   </Router>
 )
 
 export default App
+// <Route exact path='/' component={Competency} />
