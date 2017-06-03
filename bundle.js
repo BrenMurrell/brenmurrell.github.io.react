@@ -10976,6 +10976,8 @@ module.exports = getIteratorFn;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Home__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Intro__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Competency__ = __webpack_require__(225);
+
 
 
 
@@ -10989,7 +10991,8 @@ const App = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_2__Home__["a" /* default */] }),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_3__Intro__["a" /* default */] })
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_3__Intro__["a" /* default */] }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_4__Competency__["a" /* default */] })
   )
 );
 
@@ -25487,6 +25490,120 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_skills_js__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_skills_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__data_skills_js__);
+
+
+
+
+
+const Members = props => {
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'membershipSignup' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'table',
+         { className: 'u-full-width' },
+         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'thead',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+               'tr',
+               null,
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Name'
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'competency Level'
+               ),
+               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'th',
+                  null,
+                  'Descriptor'
+               )
+            ),
+            renderMembers(__WEBPACK_IMPORTED_MODULE_2__data_skills_js___default.a)
+         )
+      )
+   );
+};
+
+function renderMembers(membersArray) {
+   return membersArray.skills.map(member => {
+      return renderMember(member
+      // return <memberData key={member.id}/>
+      );
+   });
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Members);
+
+function renderMember(member) {
+   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'tr',
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'td',
+         null,
+         member.name
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'td',
+         null,
+         member.competency
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+         'td',
+         null,
+         member.descriptor
+      )
+   );
+}
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  skills: [{
+    name: 'HTML',
+    icon: '',
+    fontawesome: 'fa-html5',
+    competency: '10',
+    descriptor: 'Pretty frickin wicked at this shit'
+  }, {
+    name: 'CSS',
+    icon: '',
+    fontawesome: 'fa-css3',
+    competency: '10',
+    descriptor: 'Can do this in my sleep'
+  }, {
+    name: 'SASS',
+    icon: 'http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
+    fontawesome: '',
+    competency: '9',
+    descriptor: 'Still got a few tricks to learn'
+    // {
+    //   name: '',
+    //   icon: '',
+    //   competency: '',
+    //   descriptor: ''
+    // },
+  }]
+};
 
 /***/ })
 /******/ ]);
