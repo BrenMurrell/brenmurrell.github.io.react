@@ -5,7 +5,7 @@ module.exports = {
       icon: '',
       fontawesome: 'fa-html5',
       competency: '10',
-      descriptor: 'Pretty frickin wicked at this shit'
+      descriptor: 'There are virtually no HTML tags I can\'t use'
     },
     {
       name: 'CSS',

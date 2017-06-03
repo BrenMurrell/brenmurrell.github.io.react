@@ -5,18 +5,14 @@ import data from '../../data/skills.js'
 
 const Members = props => {
     return (
-      <div className= 'membershipSignup'>
-         <table className="u-full-width">
-            <thead>
-               <tr>
-               <th>Name</th>
-               <th>competency Level</th>
-               <th>Descriptor</th>
-               </tr>
-               {renderMembers(data)}
-            </thead>
-         </table>
-      </div>
+        <section className="competencies">
+        <div className="section__inner competencies__inner">
+            <h1>Competencies</h1>
+            <p>I can do a whole bunch of different things, using a whole bunch of different code
+            and a whole bunch of different software and I have a whole bunch of great soft skills too.</p>
+            {renderMembers(data)}
+         </div>
+      </section>
  )
 }
 
@@ -32,10 +28,11 @@ export default Members
 
 function renderMember(member){
    return (
-      <tr>
-      <td>{member.name}</td>
-      <td>{member.competency}</td>
-      <td>{member.descriptor}</td>
-      </tr>
+      <div className="comp__group">
+          <p>{member.name}</p>
+          <i className={'fa ' + member.fontawesome}></i>
+          <p>{member.competency}</p>
+          <p>{member.descriptor}</p>
+      </div>
    )
 }

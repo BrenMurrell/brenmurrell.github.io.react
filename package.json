@@ -1,10 +1,10 @@
 {
-  "name": "rotoriouswlg",
+  "name": "brenmurrell",
   "version": "1.0.0",
-  "description": "ROTORIOUS WLG WordPress Theme",
+  "description": "Bren Murrell CV Site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BrenMurrell/rotoriouswlg.git"
+    "url": "https://github.com/BrenMurrell/brenmurrell.github.io"
   },
   "main": "server/index.js",
   "scripts": {
